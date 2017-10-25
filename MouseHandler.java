@@ -7,8 +7,8 @@ import Mouse.*;
 /**
  * Mousehandler class for simulation and publisher for events
  * 
- * @author Marc Price && me
- * @version 0.5
+ * @author Justin
+ * @version 0
  */
 public class MouseHandler implements ImousePublisher////for some reason
 {
