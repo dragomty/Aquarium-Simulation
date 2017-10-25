@@ -12,7 +12,6 @@ import java.lang.String;
  */
 public class UrchinBehaviour extends Behaviour
 {
-    // instance variables - replace the example below with your own
     
    // position in to be placed at in 3D world (x,y,z coordinates):
    private double x=1.0, y=1.0, z=1.0;
@@ -30,7 +29,7 @@ public class UrchinBehaviour extends Behaviour
      */
     public UrchinBehaviour(IToken BehaviourToken,double ypos,double xRot, double yRot, double zRot)
     {
-        super(BehaviourToken);//calling super
+        super(BehaviourToken);
         // initialise instance variables
         this.x = _randomPos;;
         this.y = ypos;
