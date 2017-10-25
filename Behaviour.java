@@ -109,18 +109,6 @@ public abstract class Behaviour implements IBehaviour
        return _randomPos;
     }
     
-   /* public int bubbleSound()//
-    {
-        int random;
-       int min = 1;
-       int max = 8;
-       random = min + (int)(Math.random()*max); 
-     //  _bubbleSound = random;
-      
-       //RETURN randomised speed
-       return _bubbleSound;
-        
-    }*/
 
     /**
      * 
