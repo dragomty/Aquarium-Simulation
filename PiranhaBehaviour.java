@@ -45,7 +45,7 @@ public class PiranhaBehaviour extends Behaviour
      * 
      * 
      */
-     public Double[] position()///taken from week 11
+     public Double[] position()
     {
         Double positionVal[] = {x, y, z};
         return positionVal;
@@ -83,7 +83,7 @@ public class PiranhaBehaviour extends Behaviour
         
        }
        
-       super.move(x,y,rotateX, rotateY, rotateZ);/////CHECK IT
+       super.move(x,y,rotateX, rotateY, rotateZ);
        
        //System.out.println(_speed);
       
