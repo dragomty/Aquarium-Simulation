@@ -3,7 +3,7 @@ package Animals;
 /**
  * Token class that holds its fields.
  * 
- * @author me
+ * @author Justin
  * @version 0
  */
 public class Token implements IToken///i dont want to make this abstract????/
@@ -41,16 +41,16 @@ public class Token implements IToken///i dont want to make this abstract????/
     public Token(String ObjectTexture,String model)
     {
      ////setPosition(xpos,ypos);//changed 27 1--------------*+*-------------+-----++++-++-+-*+--------------------------------------------------------------------------------------------------------------------++++------------------------++------------------------------------------*---
-     texture = ObjectTexture;///this is IMPORTANT!!!!!!!!
+     texture = ObjectTexture;
  
     }
     
     public Token(String ObjectTexture, double xpos, double ypos, String SphereModel)
     {
-        texture = ObjectTexture;///this is IMPORTANT!!!!!!!!
+        texture = ObjectTexture;
         model = SphereModel;
-        this.x = xpos;//you need these 2 from setposition method to make it nice and clean
-        this.y = ypos;//you need these 2 from setposition method to make it nice and cl
+        this.x = xpos;
+        this.y = ypos;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Token implements IToken///i dont want to make this abstract????/
      *
      * @param  coords   the new orientation (x,y,z) of the token as an array of three Doubles
      */
-    public void orientation(Double ...coordinates)//taken from week 11
+    public void orientation(Double ...coordinates)
     {
         // VALIDATE coords:
 
@@ -84,7 +84,7 @@ public class Token implements IToken///i dont want to make this abstract????/
         this.rotateY = yRot;
         this.rotateZ = zRot;
        
-        //this.x += _speed;
+       
     }
     
    
