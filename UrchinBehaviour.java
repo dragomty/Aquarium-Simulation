@@ -7,7 +7,7 @@ import java.lang.String;
 /**
  * Write a description of class UrchinBehaviour here.
  * 
- * @author (me) 
+ * @author Justin 
  * @version (9)
  */
 public class UrchinBehaviour extends Behaviour
