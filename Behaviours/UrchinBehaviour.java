@@ -1,18 +1,18 @@
 package Behaviours;
 import Animals.IToken;
-import java.util.Random;//import random to randomizes taken from website http://www.javapractices.com/topic/TopicAction.do?Id=62
+import java.util.Random;
 import java.lang.String;
 
 
 /**
- * Write a description of class UrchinBehaviour here.
  * 
- * @author (me) 
- * @version (9)
+ * 
+ * @author Justin 
+ * @version (0)
  */
 public class UrchinBehaviour extends Behaviour
 {
-    // instance variables - replace the example below with your own
+    
     
    // position in to be placed at in 3D world (x,y,z coordinates):
    private double x=1.0, y=1.0, z=1.0;
