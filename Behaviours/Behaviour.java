@@ -1,19 +1,16 @@
 package Behaviours;
 import Animals.IToken; 
-import java.util.Random;//import random to randomizes taken from website http://www.javapractices.com/topic/TopicAction.do?Id=62
+import java.util.Random;
 
 /**
- * Write a description of class Behaviour here.
  * 
  * @author Justin
  * @version 0
  */
 public abstract class Behaviour implements IBehaviour 
 {
-   // instance variables - replace the example below with your own
    private IToken _token;
   
-   // DECLARE a double to hold the swim speed, call it '_speed':
    protected double _speed;///you need speed here because behaviour needs speed and token is only responsible for appearance
    
    protected double _randomPos;//variable for randomposition
@@ -51,17 +48,6 @@ public abstract class Behaviour implements IBehaviour
     }
     
     
-    /*public void soundPlay(java.lang.String bubbleSound, double _bubblesound)
-    {
-        if(sound == true && _bubblesound == 4)
-        {
-         //bubble = new File("bubble.waw");
-       // .play("bubble.waw");
-        
-       } 
-       sound = false;
-    }*/
-    
     /**
      * METHOD: random number generator method which calls random method and
      * has min and max values. It generates a number and returns it as our new _speed value.
@@ -70,17 +56,7 @@ public abstract class Behaviour implements IBehaviour
 
      public double initialiseNewSpeed()/////double because returns double
     {
-       /*
-        Random rnd = new Random();  
-        double min = 0.005;////min and max valuees for our random method
-        double max = 0.04;
        
-      //  0 + 0.005 = min value
-       // 1 * 0.04  0.006  = max value 
-       
-        //SET new randomised speed to _speed
-       _speed = (double)(rnd.nextDouble() * max + min);
-          */
          double random;
        double min = 0.005;
        double max = 0.05;
@@ -109,18 +85,7 @@ public abstract class Behaviour implements IBehaviour
        return _randomPos;
     }
     
-   /* public int bubbleSound()//
-    {
-        int random;
-       int min = 1;
-       int max = 8;
-       random = min + (int)(Math.random()*max); 
-     //  _bubbleSound = random;
-      
-       //RETURN randomised speed
-       return _bubbleSound;
-        
-    }*/
+  
 
     /**
      * 
@@ -131,7 +96,6 @@ public abstract class Behaviour implements IBehaviour
     public void move(double xpos, double ypos, double xRot, double yRot, double zRot)
     {
        
-      _token.move(xpos,ypos,xRot,yRot,zRot);////THIS!!!!!!!!!!!!
-     // _token.move(5.0, 5.0, 0.0, -90.0, 0.0);////THIS!!!!!!!!!!!!
+      _token.move(xpos,ypos,xRot,yRot,zRot);
     }
 }
