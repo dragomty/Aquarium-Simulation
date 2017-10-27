@@ -2,7 +2,7 @@ package Animals;
 /**
  * This is interface for IToken.
  * 
- * @author me 
+ * @author Justin 
  * @version 0
  */
 public interface IToken 
@@ -13,11 +13,11 @@ public interface IToken
      * @param        xpos,ypos,rotatex,rotatey,rotatez
      * @return       nothing
      */
-     void move(double xpos, double ypos, double rotateX, double rotateY, double rotateZ);///let this be protected
+     void move(double xpos, double ypos, double rotateX, double rotateY, double rotateZ);
     
-    //public void position(Double ...coordinates) throws ArgumentOutOfBoundsException;//week 11
+   
     
-    public void orientation(Double ...coordinates);//week 11
+    public void orientation(Double ...coordinates);
   
       
           
