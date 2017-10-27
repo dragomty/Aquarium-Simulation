@@ -7,13 +7,11 @@ import Mouse.*;
 /**
  * Mousehandler class for simulation and publisher for events
  * 
- * @author Marc Price && me
- * @version 0.5
+ * @author Justin
+ * @version 0
  */
-public class MouseHandler implements ImousePublisher////for some reason
+public class MouseHandler implements ImousePublisher
 {
-    // static instance variables (constants):
-   
     // instance variables:
     //list of mouse listeners
     private List<ImouseListener> _listeners; 
@@ -77,8 +75,6 @@ public class MouseHandler implements ImousePublisher////for some reason
     public int[] check(Env env)
     {
         // local variables:
-        // DECLARE an int[] array for the method return value
-        // INITIALISE: to return -1,-1
         int[] rtnVal={-1,-1};
         
         // IF: the left mouse button has been clicked
