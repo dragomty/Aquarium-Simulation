@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=ObjectTexture\ model
+comment0.target=Bubbles(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ bubbles\r\n\ @param\ string\ objecttexture\ string\ model\r\n\ @return\ none\r\n
+comment1.params=ObjectTexture\ model\ xpos\ ypos
+comment1.target=Bubbles(java.lang.String,\ java.lang.String,\ double,\ double)
+comment1.text=\r\n\ overriding\ bubble\ constructor\ because\ positions\ were\ needed\r\n\ @param\ strin\ objecttexture\ string\ model\ double\ xpos\ double\ ypos\r\n\ @return\ none\r\n
+numComments=2

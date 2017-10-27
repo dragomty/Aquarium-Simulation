@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=BehaviourToken\ xRot\ yRot\ zRot
+comment0.target=BubbleBehaviour(Animals.IToken,\ double,\ double,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ bubblebehaviour\r\n\ @param\ BehaviourToken,xRot,yRot,zRot\r\n\ \r\n
+comment1.params=BehaviourToken\ xpos\ ypos\ xRot\ yRot\ zRot
+comment1.target=BubbleBehaviour(Animals.IToken,\ double,\ double,\ double,\ double,\ double)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ bubblebehaviour\r\n\ @param\ BehaviourToken,xRot,yRot,zRot\r\n\ \r\n
+comment2.params=
+comment2.target=java.lang.Double[]\ position()
+comment2.text=\r\n\ testing\ method\r\n\ \r\n\ \r\n
+comment3.params=
+comment3.target=double\ speed()
+comment3.text=\r\n\ testing\ method\r\n\r\n
+comment4.params=
+comment4.target=void\ move()
+comment4.text=\r\n\ A\ movement\ method\ for\ bubble\r\n\ \r\n\ @param\ none\r\n\ @return\ none\r\n
+numComments=5

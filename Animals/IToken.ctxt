@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=xpos\ ypos\ rotateX\ rotateY\ rotateZ
+comment0.target=void\ move(double,\ double,\ double,\ double,\ double)
+comment0.text=\r\n\ Move\ method\ \r\n\ \r\n\ @param\ \ \ \ \ \ \ \ xpos,ypos,rotatex,rotatey,rotatez\r\n\ @return\ \ \ \ \ \ \ nothing\r\n
+comment1.params=coordinates
+comment1.target=void\ orientation(java.lang.Double[])
+numComments=2

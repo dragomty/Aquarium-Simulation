@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FoodManager()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ FoodManager\r\n
+comment1.params=env
+comment1.target=void\ Update(env3d.Env)
+comment1.text=\r\n\ update\ method\r\n\ \r\n\ @param\ \ env\ world\r\n\ @return\ \ \ \r\n
+comment2.params=rtnVal
+comment2.target=int[]\ OnMouse(int[])
+comment2.text=\r\n\ An\ onmouse\ method\r\n\ \r\n\ @param\ int\ rtnVal\r\n\ @return\ int\ rtnVal\ \r\n
+numComments=3
