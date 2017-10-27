@@ -2,14 +2,12 @@ package Animals;
 
 
 /**
- * Write a description of class Food here.
  * 
- * @author (me) 
- * @version (0.1)
+ * @author Justin 
+ * @version (0)
  */
 public class Food extends Token
 {
-    // instance variables - replace the example below with your own
     // reference to the 3D model:
     private String model = "sphere";
     
@@ -17,7 +15,7 @@ public class Food extends Token
 
     /**
      * Constructor for objects of class Food
-     * @param string model
+     * @param string model string objecttexture
      * @return none
      */
     public Food(String ObjectTexture,String model)
@@ -30,7 +28,7 @@ public class Food extends Token
     
      /**
      * Constructor for objects of class Food
-     * @param string string xpos ypos
+     * @param string string xpos ypos String ObjectTexture
      * @return none
      */
     public Food(String ObjectTexture,String model,double xpos,double ypos)
