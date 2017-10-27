@@ -2,12 +2,6 @@ package Simulator;
 import Behaviours.*;
 import Animals.*;
 import Mouse.*;
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Notes:
-// * Add code to this as necessary to produce your simulation.
-// * Use comments to clearly highlight your code that has been added.
-// * Acknowledge/cite appropriately any added code that is not your own.
-///////////////////////////////////////////////////////////////////////////////////////////////////
 import env3d.Env;   
 import java.util.*;
 import jff5.*;
@@ -15,42 +9,37 @@ import jff5.*;
 /**
  * Simulation is the top-level class for the Aquarium simulation.
  * 
- * @author Marc Price & (me!)
- * @version 0.4
+ * @author Justin
+ * @version 0
  */
 public class Simulation
 {
      // instance variables:
-    // DECLARE a reference to the instance of the Core class, call it '_core':
+    // DECLARE a reference to the instance of the Core class, call it '_core'
     private Core _core;
     
-    // DECLARE a reference to the instance of the 'Env' (environment) class, call it '_world':
+    // DECLARE a reference to the instance of the 'Env' (environment) class, call it '_world'
     private Env _world;
    
-    // DECLARE arraylist for behaviours, call it '_behaviour':
+    // DECLARE arraylist for behaviours, call it '_behaviour'
     private ArrayList<IBehaviour> _behaviour;
     
     //Declare static simulation instance
     private static Simulation sim;
     
-    // DECLARE arraylist for tokens, call it '_token':
-    private ArrayList<IToken> _token;///changed from token
+    // DECLARE arraylist for tokens, call it '_token'
+    private ArrayList<IToken> _token;
     
     private ArrayList<FoodBehaviour> _behaviourF;
     
-    // DECLARE a reference to the instance of the 'MouseHandler' class, call it '_mouse':
-    private MouseHandler _mouse;////111111
-    
-    // DECLARE a boolean that signals when the simulation loop should be exited:
+    // DECLARE a reference to the instance of the 'MouseHandler' class, call it '_mouse'
+    private MouseHandler _mouse;
+   
+    // DECLARE a boolean that signals when the simulation loop should be exited
     private boolean endSim = false;
     
     
 
-    
-    /**
-     * METHOD: Static Main method used for creating standalone apps
-     *
-     */
     public static void main(String[] args)
     {
         Sim();
@@ -64,8 +53,7 @@ public class Simulation
      */
     private Simulation()
     {
-        // INITIALISE instance variables:
-        // _core
+        // INITIALISE instance variables
         _core = new Core();
         _token = new ArrayList<IToken>();//arraylist list for tokens
         _behaviour = new ArrayList<IBehaviour>();///arraylist for different behaviours
@@ -95,8 +83,8 @@ public class Simulation
     private void populate()
     {
         float offset = 1.5f;
-        IToken token;/////////IMPORTANT new way of adding tokens
-        IBehaviour behaviour;////added this because of Token token
+        IToken token;
+        IBehaviour behaviour;
         
         token = new Token("textures/javaFish/JavaFish.png", "models/billboard/billboard.obj");///adding fishes below
         addToken(token);///EVERYTHING becomes token
@@ -150,30 +138,10 @@ public class Simulation
         addToken(token);///EVERYTHING becomes token
         addBehaviour(new SeahorseBehaviour(token, -180, 90, 0));
         
-        /*token = new Token("textures/javaFish/Urchin.png",5,5);
-        addToken(token);*/
-        //addBehaviour(new OrangeFishBehaviour(token, 1.9, 1.3, 0, -450, -180));///calling method for urchin
-        
-        /*token = new Token("textures/javaFish/seahorse.png",5,5);
-        addToken(token);*/
-       // addBehaviour(new SeahorseBehaviour(token, 2.0, 2.0, 2.0, -450, -180));
-        
-       /* token = new Token("textures/javaFish/seahorse.png",5,5);
-        addToken(token);*/
-       // addBehaviour(new SeahorseBehaviour(token, 2.0, 2.0, 2.0, -450, -180));
-        
-        /*token = new Token("textures/javaFish/seahorse.png",5,5);
-        addToken(token);*/
-      //  addBehaviour(new SeahorseBehaviour(token, 2.0, 2.0, 2.0, -450, -180));*/
         
         token = new Bubbles("textures/javaFish/Bubble.png","sphere");
         addToken(token);
-        addBehaviour(new BubbleBehaviour(token,0,-90,0));//calling bubble behaviour
-       
-       /* token = new Food("textures/javaFish/FishFood.png","sphere");
-        addToken(token);
-        addBehaviour(new FoodBehaviour(token,0,-90,0));*/
- 
+        addBehaviour(new BubbleBehaviour(token,0,-90,0));
     }
     
     /**
@@ -181,7 +149,7 @@ public class Simulation
      *
      * @param   token
      */
-    public void addToken(IToken token)//changed the same as behaviour method
+    public void addToken(IToken token)
     {
         
         if (token != null)
@@ -231,7 +199,7 @@ public class Simulation
     }
 
     /**
-     * METHOD: Run the simulation loop.  User presses escape to exit.
+     * METHOD: Run the simulation loop
      *
      */
     public void run()
@@ -243,17 +211,14 @@ public class Simulation
         for (IToken token : _token)
             _world.addObject(token);
             
-            
-        
            
         // Start simulation loop:
         while (!endSim)
         {
             // UPDATE STAGE:
-            // IF: user has requested simulation loop exit (ie escape pressed):
             if (_world.getKey() == 1)
             {
-                // SET: render loop exit condition
+                //render loop exit condition
                 endSim = true;
             }
             
@@ -269,7 +234,7 @@ public class Simulation
                     FoodBehaviour fud = new FoodBehaviour(food,posnX,posnY,0,-90,0);//add food behaviour
                     addBehaviour(fud);
                     
-                    if(food.y > -7)//trying to remove food after it goes off the scren
+                    if(food.y > -7)
                     {
  
                         remFood(food);
@@ -277,14 +242,6 @@ public class Simulation
                     }
                     
             }
-            
-           /*if(rtnVal[1] >= 1)///trying to use observer pattern
-            {
-                 ImousePublisher(_mouse);
-                _mouse.Update(_world);
-                _mouse.subscribe(ImouseListener_token));
-                _token.OnMouse(rtnVal);
-            }*/
             
             // UPDATE Objects in 3D world:
             for (IBehaviour behaviour : _behaviour)
