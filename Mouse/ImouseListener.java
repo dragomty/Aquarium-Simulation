@@ -4,8 +4,8 @@ import env3d.Env;
 /**
  * mouselistener interface
  * 
- * @author (me) 
- * @version (2)
+ * @author Justin 
+ * @version (0)
  */
 public interface ImouseListener
 {
