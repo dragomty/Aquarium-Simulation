@@ -10,8 +10,7 @@ import Animals.*;
  */
 public class SeahorseBehaviour extends Behaviour
 {
-   // instance variables - replace the example below with your own
-    
+  
    // position in to be placed at in 3D world (x,y,z coordinates):
    private double x=1.0, y=1.0, z=1.0;
     
@@ -22,7 +21,7 @@ public class SeahorseBehaviour extends Behaviour
   
 
     /**
-     * Constructor for objects of class OrangeFishBehaviour
+     * Constructor for objects 
      * @param BehaviourToken,xpos,ypos,yRot,yRot,zRot
      * 
      */
@@ -39,15 +38,15 @@ public class SeahorseBehaviour extends Behaviour
     }
 
     /**
-     * An example of a method - replace this comment with your own
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * 
+     * @param  
+     * @return     
      */
    public void move()
     {
        // INCREMENT orientation value with the value of speed
-       x += _speed;//apply speed
+       x += _speed;//apply x speed
        y += _speed;//apply y speed
        
          
