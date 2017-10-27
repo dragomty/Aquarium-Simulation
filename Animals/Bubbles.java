@@ -4,7 +4,7 @@ package Animals;
 /**
  * class for seperate bubble entity since it is not a true animal
  * 
- * @author me 
+ * @author Justin 
  * @version (0)
  */
 public class Bubbles extends Token
