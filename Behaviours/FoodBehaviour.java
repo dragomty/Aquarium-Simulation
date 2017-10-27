@@ -1,17 +1,16 @@
 package Behaviours;
 import Animals.IToken;
-import java.util.Random;//import random to randomizes taken from website http://www.javapractices.com/topic/TopicAction.do?Id=62
+import java.util.Random;
 import java.lang.String;
 
 /**
  * class for the food behaviour
  * 
- * @author (me) 
- * @version (2)
+ * @author Justin 
+ * @version (0)
  */
 public class FoodBehaviour extends Behaviour
 {
-    // instance variables - replace the example below with your own
    // position in to be placed at in 3D world (x,y,z coordinates):
    private double x=3.0, y=6.0, z=1.0;
    
@@ -60,7 +59,7 @@ public class FoodBehaviour extends Behaviour
        
        
        
-       super.move(x,y,rotateX, rotateY, rotateZ);/////CHECK IT  
+       super.move(x,y,rotateX, rotateY, rotateZ);
       
     }
     
