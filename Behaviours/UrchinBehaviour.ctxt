@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=BehaviourToken\ ypos\ xRot\ yRot\ zRot
-comment0.target=UrchinBehaviour(Animals.IToken,\ double,\ double,\ double,\ double)
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ UrchinBehaviour\r\n\ @param\ BehaviourToken,xpos,ypos,xRot,yRot,zRot\r\n\ \r\n
-comment1.params=
-comment1.target=void\ move()
-comment1.text=\r\n\ Urchin\ move\ method\ that\ makes\ it\ rotate\ at\ the\ bottom\ of\ the\ aquarium.\r\n\ \r\n\ @param\ \ none\r\n\ @return\ none\r\n
-numComments=2
